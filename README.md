@@ -12,7 +12,7 @@ This is a Trading Algorithm Dashboard that visualizes real-time market data and 
 - Responsive and user-friendly interface
 
 ## Tech Stack
-- **Frontend:** React.js, Chart.js, TailwindCSS
+- **Frontend:** React.js, Chart.js
 - **Backend:** Binance API (for real-time market data)
 - **Other Libraries:** Axios, React Simple Typewriter
 
@@ -32,7 +32,7 @@ https://api.binance.com/api/v3/klines
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/trading-dashboard.git
+   https://github.com/Akash-Kumar-2/Assessment--Algorithmic-Trading-Focus-.git
    cd trading-dashboard
    ```
 2. Install dependencies:
@@ -41,7 +41,7 @@ https://api.binance.com/api/v3/klines
    ```
 3. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Project Structure
@@ -67,8 +67,14 @@ trading-dashboard/
 - Buy signals are displayed in **green**, and sell signals in **red**.
 
 ## Screenshots
-![Dashboard Preview](./screenshots/dashboard.png)
-
+![](./screenshots/1.png)
+![](./screenshots/2.png)
+![](./screenshots/3.png)
+![](./screenshots/4.png)
+![](./screenshots/5.png)
+![](./screenshots/6.png)
+![](./screenshots/7.png)
+![](./screenshots/8.png)
 ## Future Enhancements
 - Implement additional trading indicators (RSI, MACD)
 - Add historical data analysis
