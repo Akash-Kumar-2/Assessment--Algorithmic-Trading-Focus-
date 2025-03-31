@@ -1,0 +1,253 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Intro Section */
+.intro {
+  padding: 40px 20px;
+  margin: 10px auto;
+  border: 2px solid rgb(208, 208, 208);
+  border-radius: 10px;
+  background: url('assets/Intro-bg.webp');
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro button {
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Responsive Hero Tag */
+.hero_tag {
+  text-align: center;
+  font-family: "General Sans", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: rgb(209, 206, 206);
+}
+
+@media (min-width: 640px) {
+  .hero_tag {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero_tag {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero_tag {
+    font-size: 3rem;
+  }
+}
+
+/* Light & Dark Theme */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.navbar.light {
+  background: blanchedalmond;
+}
+
+.navbar.dark {
+  background: #282828;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Mobile-Friendly Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background-color: #6f6f6d;
+  color: #fff;
+  border: 2px solid #ccc;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar.dark .theme-toggle {
+  background-color: #282828;
+}
+
+.theme-toggle:hover {
+  background-color: #292a2c;
+}
+
+.navbar.dark .theme-toggle:hover {
+  background-color: #c1c1c0;
+}
+
+/* Market Info Section */
+.market-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.market-info-box {
+  flex: 1 1 200px;
+  padding: 10px;
+  border-radius: 60px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  min-width: 150px;
+}
+
+body.light .market-info-box {
+  background-color: #f0f0f0;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+body.dark .market-info-box {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+/* Latest Signal Section */
+.latest-signal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.latest-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.latest-signal {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+body.dark .latest-signal-container {
+  background-color: #282828;
+}
+
+body.dark .latest-text {
+  color: #fff;
+}
+
+body.dark .latest-signal {
+  color: #ffa500;
+}
+
+/* Chart Container */
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  max-width: 1200px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light .chart-container {
+  background-color: rgb(235, 235, 235);
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 300px;
+  }
+}
+
+/* Loading & Error Styles */
+.loading {
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+  text-align: center;
+  padding: 20px;
+}
+
+.error {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  padding: 20px;
+}
