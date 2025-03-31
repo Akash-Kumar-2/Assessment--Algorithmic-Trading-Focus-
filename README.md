@@ -67,14 +67,14 @@ trading-dashboard/
 - Buy signals are displayed in **green**, and sell signals in **red**.
 
 ## Screenshots
-![](./screenshots/1.png)
-![](./screenshots/2.png)
-![](./screenshots/3.png)
-![](./screenshots/4.png)
-![](./screenshots/5.png)
-![](./screenshots/6.png)
-![](./screenshots/7.png)
-![](./screenshots/8.png)
+![](screenshots/1.png)
+![](screenshots/2.png)
+![](screenshots/3.png)
+![](screenshots/4.png)
+![](screenshots/5.png)
+![](screenshots/6.png)
+![](screenshots/7.png)
+![](screenshots/8.png)
 ## Future Enhancements
 - Implement additional trading indicators (RSI, MACD)
 - Add historical data analysis
